@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="abc_report_saleorder_document">
+    <t t-call="web.external_layout">
+        <p>halllllllllllllllllllllllllllllllllllllllllllllllllllllllll</p>
+        <div>
+             <p>my new project      ..........................</p>
+        </div>
+        <h2> this is  printedddd</h2>
+    </t>
+</template>
+
+
+<template id="abc_report_saleorder">
+    <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="doc">
+            <t t-call="saledetails.abc_report_saleorder_document" t-lang="doc.partner_id.lang"/>
+        </t>
+    </t>
+</template>
+
+
+</odoo>

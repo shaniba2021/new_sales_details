@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="aks_order_view_form_inherit"  model="ir.ui.view">
+            <field name="name">aks.order.view.form.inherit</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id"  ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+
+
+                <xpath expr="//field[@name='payment_term_id']" position="before">
+                            <field name="aks_newname"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
+    
+    
+    
+
